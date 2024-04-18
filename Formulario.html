@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!--Esse é onde fala o tipo do documento, informa ao navegador qual a versão do HTML-->
+<html lang="en">
+  <!--tipo e idioma do código-->
+<head>
+  <!--É a cabeça do trabalho, onde estará as informações do endereço e formato-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--inserir metadados-->
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="">
+    <!--estabelece relação desse documento com arquivos externos, no caso o CSS-->
+    <title>Pesquisa</title>
+    <!--título da guia aparece na aba-->
+</head>
+<body>
+  <!--corpo do site, conteúdo-->
+
+  <div class="campo">
+    <!--inserir um elemento de divisão-->
+      <h1 id="titulo">Público alvo do curso de Informática para Negócios na Fatec</h1>
+      <!--inserir um título à página-->
+      <p id="subtitulo">Complete suas informações</p>
+      <!--inserir um parágrafo, no caso um subtítulo-->
+      <br>
+  </div>
+
+  <forms>
+    <!--iniciar formulário-->
+    <fieldset class="grupo">
+      <!--agrupar elementos, essa bordinha em volta-->
+        <div class="campo">
+            <label for="nome"><strong>Nome</strong><!--strong é para deixar o texto em negrito--></label>
+            <!--dar um nome para o elemento a ser escrito (o input)-->
+            <input type="text" name="Nome" id="nome" required>
+            <!--campo de preenchimento, nesse caso é de tipo texto-->
+        </div>
+
+        <div class="campo">
+            <label for="sobrenome"><strong>Sobrenome</strong></label>
+            <input type="text" name="Sobrenome" id="sobrenome" required>
+        </div>
+    </fieldset>
+
+    <div class="campo">
+        <label for="email"><strong>Email</strong></label>
+        <input type="email" name="Email" id="email" required>
+        <!--campo de preenchimento, nesse caso é de tipo email-->
+        <!--required é o elemento usado para mostrar que o item é obrigatório-->
+    </div>
+
+    <div class="campo">
+        <label><strong>Qual gênero você se identifica?</strong></label>
+        <label>
+            <input type="radio" name="Genero" value="woman">Mulher
+            </label>
+        <label>
+            <input type="radio" name="Genero" value="man">Homem
+        </label>
+        <label>
+            <input type="radio" name="Genero" value="other">Outro
+        </label>
+        <!--label´s com input incluso, significa que o input tem um nome. esse input é do tipo bolinha-->
+    </div>
+    <div class="campo">
+
+          <label for="idade"><strong>Idade</strong></label>
+          <select id="Idade">
+            <!--selecionar uma opção, aqueles da setinha com várias opções-->
+              <option selected disabled value="">Selecione</option>
+              <!--primeira opção não selecionável-->
+              <option>Entre 16-20 anos</option>
+              <option>Entre 21-25 anos</option>
+              <option>Entre 26-30 anos</option>
+              <option>Entre 31-40 anos</option>
+              <option>Entre 40-50 anos</option>
+              <option>Acima de 50 anos</option>  
+              <!--opções que irão aparecer quando clicar na setinha-->          
+          </select>
+      </div>
+
+      <fieldset class="grupo">
+          <div class="check">
+              <label><strong>Já tem algum conhecimento sobre a área?</strong></label> <br><br>
+
+              <input type="checkbox" id="opção1" value="não">
+              <!--input de tipo quadradinho, podendo selecionar mais de uma opção-->
+              <label for="opção1">Não,estou me inserindo na área agora</label>
+              <br>
+              <input type="checkbox" id="opção2" value="sim-1">
+              <label for="opção2">Sim, tenho curso superior na área</label>
+              <br>
+              <input type="checkbox" id="opção3" value="sim-2">
+              <label for="opção3">Sim, tenho curso técnico na área</label>
+              <br>
+              <input type="checkbox" id="opção4" value="sim-3">
+              <label for="opção4">Sim, fiz cursos online sobre a área</label>
+              <br>
+              <input type="checkbox" id="opção5" value="sim-4">
+              <label for="opção5">Sim, já atuo na área</label>
+          </div>       
+      </fieldset>
+
+      <div class="campo">
+          <br>
+          <label><strong>Conte um pouco do motivo que decidiu estar fazendo esse curso</strong></label>
+          <textarea row="10" style="width: 26em" id="motivo"></textarea>
+          <!--inserir área de texto, row é a quantidade de linhas-->
+      </div>
+
+      <button class="botao" type="submit">Enviar</button>
+      <!--inserir botão, do tipo enviar-->
+
+  </forms>
+
+</body>
+</html>
