@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--inserir metadados-->
-    <link rel="stylesheet" type="text/css" href="formulario.css" media="">
+    <link rel="stylesheet" type="text/css" href="style.css" media="">
     <!--estabelece relação desse documento com arquivos externos, no caso o CSS-->
     <title>Pesquisa</title>
     <!--título da guia aparece na aba-->
@@ -48,16 +48,17 @@
         <!--required é o elemento usado para mostrar que o item é obrigatório-->
     </div>
 
-    <div class="campo">
-        <label><strong>Qual gênero você se identifica?</strong></label>
+    <div class="campo-genero">
+        <h3 class="campo-genero-titulo"><strong>Qual gênero você se identifica?</strong></h3>
+
         <label>
-            <input type="radio" name="Genero" value="woman">Mulher
-            </label>
-        <label>
-            <input type="radio" name="Genero" value="man">Homem
+          <input type="radio" name="Genero" value="woman">Mulher
         </label>
         <label>
-            <input type="radio" name="Genero" value="other">Outro
+          <input type="radio" name="Genero" value="man">Homem
+        </label>
+        <label>
+          <input type="radio" name="Genero" value="other">Outro
         </label>
         <!--label´s com input incluso, significa que o input tem um nome. esse input é do tipo bolinha-->
     </div>
@@ -80,7 +81,7 @@
 
       <fieldset class="grupo">
           <div class="check">
-              <label><strong>Já tem algum conhecimento sobre a área?</strong></label> <br><br>
+              <h4 class="grupo-titulo"><strong>Já tem algum conhecimento sobre a área?</strong></h4> <br><br>
 
               <input type="checkbox" id="opção1" value="não">
               <!--input de tipo quadradinho, podendo selecionar mais de uma opção-->
@@ -107,9 +108,11 @@
           <!--inserir área de texto, row é a quantidade de linhas-->
       </div>
 
-      <button class="botao" type="submit">Enviar</button>
-      <!--inserir botão, do tipo enviar-->
-
+      <div class="div-botao">
+        <button class="botao" type="submit">Enviar</button>
+        <!--inserir botão, do tipo enviar-->
+      </div>
+        
   </forms>
 
 </body>

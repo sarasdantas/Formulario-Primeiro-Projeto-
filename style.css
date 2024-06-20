@@ -3,12 +3,14 @@
   margin: 0;
   padding: 0;
 }
+
 #titulo {
+  text-align: center;
   /*elementos do id título*/
   font-family: sans-serif;
   /*fonte*/
   color: #380B61;  
-  margin-left: 7%;
+  margin: 20px 0 10 10;
   /*margem do lado esquerdo*/
 }
 
@@ -16,14 +18,9 @@
   /*todos do id subtítulo*/
   font-family: sans-serif;
   color: #380B61;
-  margin-left: 10%;
 }
 
-fieldset {
-  /*elementos de tag fieldset*/
-  border: 0;
-  /*borda*/
-}
+
 
 body {
   /*elementos da tag body*/
@@ -34,32 +31,42 @@ body {
   /*tamanho da fonte*/
   color: #59429D;
   /*cor da parte do check box*/
-  margin-left: 36%;
-  margin-top: 2%;
-  /*margem da parte superior*/
-  justify-content: center;
 }
 
 input, select, textarea, button {
+  width: 50%;
   /*elementos das tags acima*/
   border-radius: 20px;
   /*formato das bordas, deixou esse aspecto arredondado*/
 }
 
 .campo {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   /*elementos de classe campo*/
   margin-bottom: 1em;
   /*margens dos campos de respostas*/
 }
 
-.campo label {
-  /*elementos de classe campo e de tag label*/
-  margin-bottom: 0.2em;
-  color: #59429d;
-  display: block;
+.campo-genero-titulo {
+  margin-bottom: 1em;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
 
-fieldset .grupo .campo{
+.campo label {
+  /*elementos de classe campo e de tag label*/
+  color: #59429d;
+  display: flex;
+}
+
+fieldset .grupo {
   float: left;
   margin-right: 1em;
 }
@@ -79,28 +86,30 @@ fieldset .grupo .campo{
   background:#E0E0F8;
 }
 
+.grupo-titulo{
+  display: flex;
+  justify-content: center;
+}
+
+.div-botao{
+  display: flex;
+  justify-content: center;
+}
 .botao {
+  
   font-size: 1.2em;
-  background: #59429d;
-  border: 0;
+    background: #59429d;
+  border: none;
+
   margin-bottom: 1em;
   color: #ffffff;
   padding: 0.2em 0.6em;
   box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
   text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
-  position: absolute;
-  top: 90%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
 }
 
 .botao:hover {
   background: #ccbbff;
   box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
   text-shadow: none;
-}
-
-#check {
-  display: inline-block;
 }
